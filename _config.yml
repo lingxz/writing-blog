@@ -1,0 +1,22 @@
+# ----------- CONFIGURABLE START -----------
+title:            "To Bleed At A Typewriter"
+description:      "Lingyi's writing blog"
+url:              https://writing.theconfused.me # Site url, without a slash at the end.
+baseurl:          ""
+signoff:          "Lingyi" # Your name
+google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            false # Turn on twitter and facebook share buttons
+
+links:
+  - name:         Posts
+    url:          /
+    external:     false
+  - name:         About me
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /:title
+defaults:
+  - values:
+      layout: "default"
