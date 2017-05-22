@@ -12,10 +12,10 @@ layout: default
 <p class="center grey">posted on {{ page.date | date_to_string }}</p>
 <ul class="navigation center grey">
 	{% if page.previous.url %}
-		<li><a href="{{ site.url }}/{{ page.previous.url }}" title="{{ page.previous.title }}">previous post</a></li>
+		<li><a href="{{ page.previous.url | absolute_url }}" title="{{ page.previous.title }}">previous post</a></li>
 	{% endif %}
 	{% if page.next.url %}
-		<li><a href="{{ site.url }}/{{ page.next.url }}" title="{{ page.next.title }}">next post</a></li>
+		<li><a href="{{ page.next.url | absolute_url }}" title="{{ page.next.title }}">next post</a></li>
 	{% endif %}
 </ul>
 <!-- <p class="center"><a href="{{ site.email_subscribe }}" target="_blank">Sign-up to receive all blog posts by email :)</a></p> -->

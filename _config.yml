@@ -10,7 +10,7 @@ email_subscribe: http://eepurl.com/cNZfVz
 
 markdown: kramdown
 
-permalink: /:title/
+permalink: :title/
 
 # Defaults
 defaults:
