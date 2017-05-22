@@ -1,9 +1,17 @@
 ---
-title: About me
+layout: page
+title: About
+permalink: /about/
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
+Hi - **I'm Lingyi Hu**. This is my writing blog where I share my some of my essays, poetry, and fiction, mostly in Chinese. 
 
-Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
+The name of this blog comes from Ernest Hemingway's quote: 
 
-Find me on [GitHub](https://github.com/muan) or [Twitter](https://twitter.com/muanchiou).
+> There is nothing to writing. All you do is sit down at a typewriter and bleed.
+
+I also keep a tech blog at [theconfused.me](https://theconfused.me). 
+
+You can contact me at me(at)hulingyi.com.
+
+

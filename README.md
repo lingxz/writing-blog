@@ -1,1 +1,0 @@
-Writing blog. See live site [here](https://writing.theconfused.me). 

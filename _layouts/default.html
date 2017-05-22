@@ -1,48 +1,43 @@
-{% assign is_post = page.date %}
-<!doctype>
-<html lang="en">
-  <head>
-    <meta content='{{ page.title }} - {{ site.title }}' name='title' />
-    <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
-    <title>{{ page.title }} - {{ site.title }}</title>
-    {% include head.html %}
-  </head>
-  <body class="lh-copy dark-gray pa0 f6 sans-serif bg-super-white">
-    <header class="tc mt4">
-      <a href="{{ '/' | absolute_url }}">
-        <img src="{{ site.url }}/images/scribble.png" alt="Home" width="53" height="59">
-      </a>
-      <h2 class="mb0"><a class="link dark-gray" href="{{ '/' | absolute_url }}">To bleed at a typewriter</a></h2>
-      <p class="ma0">A writing blog by <a class="link blue" href="https://theconfused.me/about/">Lingyi</a></p>
-    </header>
-    <div class="mw6 bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
+<!doctype html>
+<html>
+	<head>
+		<!-- tech -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Blog Feed" />
 
-      <main class="tl f6 relative pa4 pa5-ns overflow-hidden">
-        {% if page.title %}
-          <div class="mb4">
-            {% if page.date %}<div class="fw600 light-silver mt1">{{ page.date | date_to_string }}</div>{% endif %}
-            <h1 class="ttu f3 mt0 lh-title cb mb2">
-              {% if is_post %}
-              {% endif %}
-              {{ page.title }}
-            </h1>
-            {% if is_post and site.share %}
-              <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-action="like"></div>
-            {% endif %}
-          </div>
-        {% endif %}
-        <div class="markdown-body">
-          {{ content }}
-        </div>
-        {% if is_post %}{% include signoff.html %}{% endif %}
-      </main>
-      {% if is_post %}{% include pagination.html %}{% endif %}
-    </div>
-    <footer class="mw6 center tc pt3 pb4 silver">
-      Built with Jekyll using <a href="http://github.com/muan/scribble" class="link silver hover-blue pv1">Scribble</a>.
-      <img src="{{ site.url }}/images/scribble2.png" alt="scribble" class="mt4 db center" />
-    </footer>
-  </body>
+		<!-- page -->
+		<title>{{ site.title }} | {{ site.tag_line }}</title>
+		<meta name="author" content="{{ site.author }}">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="keywords" content="{{ site.keywords }}">
+		<link rel="shortcut icon" href="{{ '/assets/img/typewriter.png' | absolute_url }}">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/default.css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header" class="grey">
+				<p><strong><a href="{{ site.url }}">{{ site.title }}</a></strong> | {{ site.tag_line }}</p>
+			</div>
+
+			<div id="content">
+				{{ content }}
+			</div>
+
+			<div id="footer" class="grey">
+				<ul class="navigation">
+					<li><a href="{{ site.url }}/about">about</a></li>
+					<li><a href="{{ site.url }}/archives">archives</a></li>
+				</ul>
+				<p><small>Using the jSimple theme designed and coded by <a href="https://paulmostowyj.github.io">Paul Mostowyj</a></small></p>
+			</div>
+		</div>
+	</body>
 </html>
