@@ -7,7 +7,15 @@
 		<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Blog Feed" />
 
 		<!-- page -->
-		<title>{{ site.title }} | {{ site.tag_line }}</title>
+		<!-- <title>{{ site.title }} | {{ site.tag_line }}</title> -->
+		<title>
+			{% if page.title %}
+				{{ page.title }} - {{ site.title }}
+			{% else %}
+				{{ site.title }} | {{ site.tag_line }}
+			{% endif %}
+		</title>
+		<!-- <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title> -->
 		<meta name="author" content="{{ site.author }}">
 		<meta name="description" content="{{ site.description }}">
 		<meta name="keywords" content="{{ site.keywords }}">
