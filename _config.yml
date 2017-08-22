@@ -1,0 +1,35 @@
+title: To Bleed at a Typewriter
+description: A writing blog.
+smalltext: |
+  Hi, I am Lingyi. This is my writing blog. Ernest Hemingway once said, "There is nothing to writing. All you do is sit down at a typewriter and bleed." I also keep a tech/physics blog at <a href='https://theconfused.me' target='_blank'>theconfused.me</a>.
+permalink: /:title/
+tagline: a writing blog
+url: "https://writing.theconfused.me"
+keywords: poetry poems writing
+baseurl: "" # the subpath of your site, e.g. "/blog" leave blank if no subpath
+favicon: "/assets/img/feather.png" # path of the favicon
+image: "/assets/img/feather.png"
+author: Lingyi Hu
+
+# Conversion
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+color-theme: light # light or dark, default is light
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
