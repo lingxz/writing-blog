@@ -1,7 +1,7 @@
 title: To Bleed at a Typewriter
 description: A writing blog.
 smalltext: |
-  Hi, I am Lingyi. This is my writing blog. Ernest Hemingway once said, "There is nothing to writing. All you do is sit down at a typewriter and bleed." I also keep a tech/physics blog at <a href='https://theconfused.me' target='_blank'>theconfused.me</a>.
+  Hello, I am Lingyi. This is my writing blog. 
 permalink: /:title/
 tagline: a writing blog
 url: "https://writing.theconfused.me"
