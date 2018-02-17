@@ -8,5 +8,9 @@ layout: default
 
 <div class="post">
 	<h1 class="post-title">{{ page.title }}</h1>
-	<div class="post-content">{{ content }}</div>
+    {% if page.small %}
+        <div class="post-content small">{{ content }}</div>
+    {% else %}
+        <div class="post-content">{{ content }}</div>
+    {% endif %}
 </div>

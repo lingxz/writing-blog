@@ -2,6 +2,7 @@
 title: Scientist
 category: poetry
 language: english
+small: true
 ---
 
 from flavorful quarks to spinning atoms  
