@@ -17,3 +17,6 @@ category: poetry
 沙漠里的风，海上的天气。  
 所有激烈和温柔，  
 刚刚好而已。  
+
+
+(inspired by a white London)
