@@ -1,0 +1,21 @@
+baseURL = "https://writing.theconfused.me"
+languageCode = "en-us"
+title = "当时年少春衫薄"
+theme = "curry"
+metaDataFormat = "yaml"
+
+[permalinks]
+post = "/:slug/"
+
+[params]
+dateFormat = "2006年01月02日"
+monthDateFormat = "01月02日"
+
+[frontmatter]
+date  = [":filename", ":default"]
+
+[blackfriday]
+extensions = ["hardLineBreak"]
+
+[taxonomies]
+category = "category"

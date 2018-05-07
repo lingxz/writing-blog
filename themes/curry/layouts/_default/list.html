@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="container archive">
+<!--   <div class="post-title">{{ .Title }}</div>
+  {{ .Content }} -->
+<div class="">
+  {{ range .Data.Pages.GroupByDate "2006" }}
+  <div class="post">
+    <div class="archive-year">{{ .Key }}</div>
+    {{ range .Pages }}
+    <!-- <div><a href="{{ .Permalink | relURL }}" class="archive-link no-color-link">{{ .Title }}</a> - <time>{{ .Date.Format .Site.Params.monthDateFormat }}</time></div> -->
+    <div><time>{{ .Date.Format .Site.Params.monthDateFormat }}</time>&nbsp;&nbsp;<a href="{{ .Permalink | relURL }}" class="archive-link no-color-link">{{ .Title }}</a></div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+</main>
+{{ end }}

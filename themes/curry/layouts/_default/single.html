@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="container">
+  <div class="post">
+    <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ if not .Date.IsZero }}<div class="post-date">写于{{ .Date.Format .Site.Params.dateFormat }}</div>{{ end }}
+    <div class="post-content">{{ .Content }}</div>
+    <div class="tags">
+      {{ if isset .Params "category" }}
+        {{ range .Params.category }}<a href='{{ "/category/" | relURL }}{{ . | urlize }}' class="tag-link">#{{ . }}</a> {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}
