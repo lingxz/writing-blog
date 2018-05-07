@@ -4,6 +4,5 @@
 {{ partial "open_graph.html" . }}
 {{ .Hugo.Generator }}
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-<link href='{{ "css/styles.css" | relURL }}' rel="stylesheet">
-<!-- <link rel="icon" href='{{ "/favicon.ico" | relURL }}' type="image/x-icon"/> -->
-<link href='{{ "/feed.xml" | relURL }}' rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" />
+<style type="text/css">{{ partial "styles.css" . | safeCSS }}</style>
+<link rel="icon" href='{{ "/favicon.ico" | relURL }}' type="image/x-icon"/>
