@@ -15,9 +15,8 @@ tunnel lights gradually fade to make way for golden memories
 once upon a time when you and I talked for hours without pausing for breath in between  
 my voice falls soft as you gently catch them  
 with awkward laughs and lame returns that trap me  
-if it makes you uncomfortable, I won’t even breathe  
-for the time I spent with you will precipitate as light blue crystals  
-dazzling in their pure fragility  
+if it makes you uncomfortable
+I won’t even breathe
 
 how do I tell myself not to be greedy  
 that this is the best we can be  
