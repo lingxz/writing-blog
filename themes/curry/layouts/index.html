@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "in" .Site.Params.mainSections) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 <main class="container home">
   {{ range $paginator.Pages }}
   <div class="post">
