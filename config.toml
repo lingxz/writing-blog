@@ -14,8 +14,10 @@ monthDateFormat = "01月02日"
 [frontmatter]
 date  = [":filename", ":default"]
 
-[blackfriday]
-extensions = ["hardLineBreak"]
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    extensions = ["hardLineBreak"]
 
 [taxonomies]
 category = "category"
