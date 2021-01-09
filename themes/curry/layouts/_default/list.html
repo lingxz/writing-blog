@@ -1,7 +1,5 @@
 {{ define "main" }}
 <main class="container archive">
-<!--   <div class="post-title">{{ .Title }}</div>
-  {{ .Content }} -->
 <div class="">
   {{ range .Data.Pages.GroupByDate "2006" }}
   <div class="post">
@@ -13,5 +11,7 @@
   </div>
   {{ end }}
 </div>
+<br/>
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=theconfused/WCqy', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Get new posts to your inbox</p><p><input type="text" style="width:140px" name="email" placeholder="name@example.com"/></p><input type="hidden" value="theconfused/WCqy" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
 </main>
 {{ end }}
