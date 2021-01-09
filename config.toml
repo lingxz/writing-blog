@@ -1,8 +1,11 @@
 baseURL = "https://writing.theconfused.me"
 languageCode = "en-us"
 title = "当时年少春衫薄"
-theme = "curry"
+theme = ["hugo-atom-feed", "curry"]
 metaDataFormat = "yaml"
+
+[outputs]
+home = ["HTML", "ATOM"]
 
 [permalinks]
 post = "/:slug/"
