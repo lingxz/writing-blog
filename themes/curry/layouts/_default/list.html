@@ -5,8 +5,7 @@
   <div class="post">
     <div class="archive-year">{{ .Key }}</div>
     {{ range .Pages }}
-    <!-- <div><a href="{{ .Permalink | relURL }}" class="archive-link no-color-link">{{ .Title }}</a> - <time>{{ .Date.Format .Site.Params.monthDateFormat }}</time></div> -->
-    <div><time>{{ .Date.Format .Site.Params.monthDateFormat }}</time>&nbsp;&nbsp;<a href="{{ .Permalink | relURL }}" class="archive-link no-color-link">{{ .Title }}</a></div>
+      <div><time>{{ .Date.Format .Site.Params.monthDateFormat }}</time>&nbsp;&nbsp;<a href="{{ .Permalink | relURL }}" class="archive-link no-color-link">{{ .Title }}</a></div>
     {{ end }}
   </div>
   {{ end }}

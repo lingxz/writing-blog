@@ -2,19 +2,21 @@
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 <main class="container home">
   {{ range $paginator.Pages }}
-  <div class="post">
-    <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="excerpt">{{ if .Params.Summary }} <p>{{ .Params.Summary | markdownify }}</p> {{ else }} {{ .Summary }} {{ end }}</div>
-    <div class="tags">
-      {{ if isset .Params "category" }}
-        {{ range .Params.category }}<a href='{{ "/category/" | relURL }}{{ . | urlize }}' class="tag-link">#{{ . }}</a> {{ end }}
-      {{ end }}
-    </div>
-    <div class="post-footer">
-      <a class="no-color-link" href="{{ .RelPermalink }}">全文...</a>
-      <span class="post-footer-right">写于{{ .Date.Format .Site.Params.dateFormat }}</span>
-    </div>
-  </div>
+    {{ if not .Params.hidden }}
+      <div class="post">
+        <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="excerpt">{{ if .Params.Summary }} <p>{{ .Params.Summary | markdownify }}</p> {{ else }} {{ .Summary }} {{ end }}</div>
+        <div class="tags">
+          {{ if isset .Params "category" }}
+            {{ range .Params.category }}<a href='{{ "/category/" | relURL }}{{ . | urlize }}' class="tag-link">#{{ . }}</a> {{ end }}
+          {{ end }}
+        </div>
+        <div class="post-footer">
+          <a class="no-color-link" href="{{ .RelPermalink }}">全文...</a>
+          <span class="post-footer-right">写于{{ .Date.Format .Site.Params.dateFormat }}</span>
+        </div>
+      </div>
+    {{ end }}
   {{ end }}
   <div class="pagination">
     {{ if .Paginator.HasNext }}<a class="no-color-link" href="{{ .Paginator.Next.URL | relURL }}">&larr;older&nbsp;</a>{{ end }}
