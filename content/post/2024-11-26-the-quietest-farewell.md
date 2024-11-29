@@ -1,5 +1,5 @@
 ---
-title: 最彻底的离别时悄无声息的
+title: 最彻底的离别是悄无声息的
 category: [poetry]
 summary: |
     那天下午 你拿起东西就走
