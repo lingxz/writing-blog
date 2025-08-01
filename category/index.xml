@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category on 当时年少春衫薄</title>
+    <link>https://writing.theconfused.me/category/</link>
+    <description>Recent content in Category on 当时年少春衫薄</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://writing.theconfused.me/category/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>poetry</title>
+      <link>https://writing.theconfused.me/category/poetry/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://writing.theconfused.me/category/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>essay</title>
+      <link>https://writing.theconfused.me/category/essay/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://writing.theconfused.me/category/essay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lyrics</title>
+      <link>https://writing.theconfused.me/category/lyrics/</link>
+      <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://writing.theconfused.me/category/lyrics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
